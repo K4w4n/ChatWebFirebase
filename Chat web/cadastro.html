@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script>
+        if (localStorage.informacaoAppMensagens) {
+            window.location.href = 'mensagens.html';
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecadastro.css">
+    <title>Cadastro</title>
+    <script src="js/infoLocal.js"></script>
+    <script>
+        if (infoLocalUser.session) {
+            window.location.href = 'mensagens.html';
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="container">
+        <form id="form">
+            <h2>Cadastre-se</h2>
+            <div id="section">
+                <div id="section-one">
+                    <label for="nome">Nome</label>
+                    <input name="nome" type="text" id="username" placeholder="Digite seu nome" autofocus required>
+                </div>
+                <div id="section-one">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input name="sobrenome" type="text" id="sobrenome" placeholder="Digite seu sobrenome" required>
+                </div>
+            </div>
+            <div id="section-one">
+                <label id="email-label" for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div id="section-one">
+                <label id="date-label" for="data-nasc">Data de nascimento</label>
+                <input type="date" name="data-nasc" id="data" required>
+            </div>
+            <div id="password">
+                <div id="section-one">
+                    <label for="senha">Senha</label>
+                    <input name="senha" type="password" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div id="section-one">
+                    <label for="confirm-senha">Confirme sua senha</label>
+                    <input type="password" name="confirm-senha" id="confirm-senha" placeholder="Digite sua senha " required>
+                </div>
+            </div>
+            <div id="termos">
+                <input id="check" type="checkbox" name="check" required>
+                <label id="check-label" for="check">Lí e concordo com todos os <a href="#">termos</a></label>
+            </div>
+            <div id="submit-box">
+                <input id="submit" type="button" name="submit" value="Cadastrar">
+            </div>
+            <a href="login.html">Já tem uma conta?</a>
+        </form>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyD5Zr3qWp-I0hFRc-I5gfAZU4FbGYiCcpo",
+            authDomain: "db-rede-social.firebaseapp.com",
+            databaseURL: "https://db-rede-social-default-rtdb.firebaseio.com",
+            projectId: "db-rede-social",
+            storageBucket: "db-rede-social.appspot.com",
+            messagingSenderId: "569027574392",
+            appId: "1:569027574392:web:f497c63e00cd9483704b8d",
+            measurementId: "G-9HJEM7WM3P"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="js/cadastro.js"></script>
+</body>
+
+</html>

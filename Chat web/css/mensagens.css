@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#main {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: center;
+}
+
+#contacts {
+    color: #fff;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgb(10, 182, 255), rgb(1, 127, 240));
+    width: 25%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    overflow: auto;
+}
+
+.notify {
+    animation: notify 1s normal infinite;
+}
+
+@keyframes notify {
+    99% {
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+        color: rgb(10, 182, 255);
+    }
+}
+
+#contacts .selecionado {
+    background-color: #fff;
+    color: rgb(1, 127, 240);
+}
+
+#contacts,
+#chat {
+    display: block;
+}
+
+#chat {
+    background-color: rgb(14, 156, 218);
+    width: 75%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+#chat,
+#contacts {
+    height: 100%;
+}
+
+.contact-friend {
+    margin: 1%;
+    padding: 5% 0 5% 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: #ffffff;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: calc(98% - 9px);
+    display: flex;
+}
+
+.contact-friend:hover {
+    color: #0094f6;
+    background-color: rgba(255, 255, 255, 0.74);
+    background-image: linear-gradient( #fff, rgb(225, 227, 233));
+}
+
+#Seacher-friend {
+    margin: 1% 0 1% 0;
+    padding: 1% 0 1% 5px;
+    outline: none;
+    width: calc(100% - 9px);
+}
+
+.your-msg {
+    background-image: linear-gradient( rgb(8 181 255), rgb(57 185 241));
+    align-self: flex-end;
+}
+
+.other-msg {
+    background-color: #fff;
+    align-self: flex-start;
+}
+
+.msg {
+    max-width: 50%;
+    border-radius: 3px;
+    margin: 1% 1% 1% 1%;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+#contact-friend-selected {
+    background-image: linear-gradient(rgb(10, 182, 255), rgb(14, 156, 218));
+    padding: 1% 0 1% 5px;
+    color: #fff;
+    font-family: sans-serif;
+    flex-grow: 1;
+    flex-wrap: 1;
+}
+
+#sair {
+    position: absolute;
+    left: 98%;
+    color: #F4F4F4;
+    font-family: sans-serif;
+    font-size: larger;
+}
+
+#sair:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+#msg-camp {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 50;
+    flex-wrap: 1;
+    overflow: auto;
+    background-image: linear-gradient(#9dc7f1, rgb(144 180 218));
+}
+
+#send-box {
+    flex-grow: 1;
+    flex-wrap: 1;
+    background-image: linear-gradient(150deg, rgb(10, 182, 255), rgb(14, 156, 218));
+    padding: 1%;
+    visibility: hidden;
+}
+
+#msg-camp:empty {
+    background-color: rgb(14, 156, 218);
+    background-image: url('../img/astronalta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.time-msg {
+    font-size: 0.5em;
+    font-family: cursive;
+    color: #6f6f6f;
+    text-align: right;
+}
+
+.your-msg .time-msg {
+    color: #585454;
+}
+
+.dataMsgDivision {
+    flex-wrap: 1;
+    filter: blur();
+    background-color: #00000017;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0.1%;
+}
+
+.dataMsgDivision div {
+    background-color: lemonchiffon;
+    border-radius: 100px;
+    padding: 0.5% 1% 0.5% 1%;
+}
+
+:root {
+    --height-send-button: 50px;
+}
+
+#button-send {
+    width: auto;
+    height: var(--height-send-button);
+}
+
+#typing-field {
+    font-size: 1em;
+    font-family: sans-serif;
+    width: calc(100% - var(--height-send-button) - 9px - 3%);
+    height: 50;
+    resize: none;
+    padding: 2% 1% 1% 2%;
+    border-radius: var(--height-send-button);
+    outline: 0;
+}
+
+#button-send:active {
+    filter: brightness(50%);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+.tela-Ativa {
+    visibility: visible;
+    position: initial;
+}
+
+.tela-Desativada {
+    visibility: hidden;
+    position: absolute;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Your msg</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/mensagens.css'>
+    <script src="js/infoLocal.js"></script>
+    <script>
+        if (!infoLocalUser.session) {
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+
+<body>
+
+    <main id="main">
+
+        <section id="contacts">
+
+            <input type="text" id="Seacher-friend" placeholder="Search for a @friend">
+
+        </section>
+        <span id="sair" alt="sair">x</span>
+
+        <section id="chat">
+
+            <section id="contact-friend-selected">
+            </section>
+
+            <section id="msg-camp"></section>
+
+            <section id="send-box">
+
+                <textarea id="typing-field" placeholder="Enter your message..."></textarea>
+
+                <img src=".\img\send.png" id="button-send">
+
+            </section>
+
+
+        </section>
+
+    </main>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyD5Zr3qWp-I0hFRc-I5gfAZU4FbGYiCcpo",
+            authDomain: "db-rede-social.firebaseapp.com",
+            databaseURL: "https://db-rede-social-default-rtdb.firebaseio.com",
+            projectId: "db-rede-social",
+            storageBucket: "db-rede-social.appspot.com",
+            messagingSenderId: "569027574392",
+            appId: "1:569027574392:web:f497c63e00cd9483704b8d",
+            measurementId: "G-9HJEM7WM3P"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src='js/mensagens.js'></script>
+</body>
+
+</html>
