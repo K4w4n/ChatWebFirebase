@@ -16,4 +16,5 @@ Caso não apareça exiistem duas opções: o email esta errado ou não existe ne
 Após isso, click no contato, mande uma mensagem e seja feliz!
 ## Créditos
 @o-isaque: Desenvolvedor das telas de login
+
 @hyperzphobos: Desenvolveu parte do firebase
