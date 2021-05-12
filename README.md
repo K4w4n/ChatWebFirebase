@@ -1,4 +1,4 @@
-# ChatWebFirebase
+# [ChatWebFirebase](https://chat-web.kaway.repl.co/mensagens.html)
 Esse é um pequeno projeto de chat web usando o Firebase.
 Pesso perdão se o código esta meio gambiarra, logo mais estarei criando uma verção 2.0 desse projeto, toda critica e sugestão é bem vinda.
 
@@ -12,9 +12,11 @@ De tempos em tempos as contas e mensagens são apagadas por motivo de segurança
 ![image](https://user-images.githubusercontent.com/69736349/117904103-21209c80-b2a7-11eb-9995-df55c87b8c9a.png)
 O contato do seu colega deverá aparecer aqui:
 ![image](https://user-images.githubusercontent.com/69736349/117904484-d2bfcd80-b2a7-11eb-989f-5b2d35eb1f21.png)
-Caso não apareça exiistem duas opções: o email esta errado ou não existe nenhuma conta com esse email.
+Caso não apareça existem duas opções: o email esta errado ou não existe nenhuma conta com esse email.
 Após isso, click no contato, mande uma mensagem e seja feliz!
 ## Créditos
-@o-isaque: Desenvolvedor das telas de login
+[@o-isaque](https://github.com/o-isaque): Desenvolvedor das telas de login e registro
 
-@hyperzphobos: Desenvolveu parte do firebase
+[@hyperzphobos](https://github.com/hyperzphobos): Desenvolveu parte do firebase
+
+[@K4w4n](https://github.com/K4w4n): Desenvolvedor Do Design do chat e do Firebase
