@@ -7,6 +7,6 @@ O chat não esta funcionando pois o firebase esta desativado, mesmo assim não c
 De tempos em tempos as contas e mensagens são apagadas por motivo de segurança.
 
 ## Modo de usar
-Caso tenha uma conta faça login normalmente, se não tiver basta criar uma (com dados falsos, o site não é seguro).
-Para testar basta pesquisar o email de outro colega logado no site, se não tiver nenhum amigo (isso é triste) utilize esse email e envie uma mensagem para mim:
-kawan.santos2@etec.sp.gov.br
+- Caso tenha uma conta faça login normalmente, se não tiver basta criar uma (com dados falsos, o site não é seguro).
+- Para testar basta pesquisar o email de outro colega logado no site, se não tiver nenhum amigo (isso é triste) utilize esse email a baixo e o cole mo campo "Search for a @friend": kawanaraujocontato@gmail.com
+![image](https://user-images.githubusercontent.com/69736349/117904103-21209c80-b2a7-11eb-9995-df55c87b8c9a.png)
